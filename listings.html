@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="VTuber事務所の所属募集を、活動環境で比較。公式公開情報を整理して一覧化。応募は各社公式ページから。" />
+<link rel="stylesheet" href="assets/style.css" />
+
+<title>募集一覧 | StageLink</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="headerInner">
+    <a class="brand" href="index.html" aria-label="StageLink トップへ">
+      <div class="brandMark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2.8l2.4 5 5.5.8-4 3.9.9 5.5L12 15.8 7.2 18l.9-5.5-4-3.9 5.5-.8L12 2.8z" fill="rgba(255,255,255,.96)"/>
+          <path d="M14.8 14.2c.6.5 1.4.5 2 0l1.9-1.9c.6-.6.6-1.4 0-2l-.3-.3" stroke="rgba(255,255,255,.96)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M9.2 9.8c-.6-.5-1.4-.5-2 0L5.3 11.7c-.6.6-.6 1.4 0 2l.3.3" stroke="rgba(255,255,255,.96)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="brandText"><span>StageLink</span></div>
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <a data-nav href="listings.html">募集一覧</a>
+      <a data-nav href="about.html">このサイトについて</a>
+      <a data-nav href="about.html#request">掲載依頼</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="layout">
+    
+<aside class="card sidebar" data-side>
+  <div class="sideTitle">
+    <h3>保存した事務所</h3>
+    <span class="pill" data-fav-count>0件</span>
+  </div>
+  <div class="sideControls">
+    <input class="input" data-fav-search placeholder="事務所名で検索" />
+  </div>
+  <div class="sideControls">
+    <select class="select" data-fav-sort aria-label="並び替え">
+      <option value="checked_desc">最終確認日（新しい順）</option>
+      <option value="checked_asc">最終確認日（古い順）</option>
+      <option value="name_asc">名前（A→Z）</option>
+      <option value="name_desc">名前（Z→A）</option>
+    </select>
+  </div>
+  <div class="sideList" data-fav-list></div>
+  <div class="sideNotice">保存情報はこの端末のブラウザ内にのみ保存されます（第1段階：UI中心）。</div>
+</aside>
+
+    <section class="main">
+      <div class="listHeader">
+        <h2>募集一覧（サンプル）</h2>
+        <input class="input" style="max-width:360px;" data-search placeholder="キーワード（事務所名）" />
+      </div>
+      <div class="filters">
+        <div class="card filterBox" data-filter-box>
+          <div style="font-weight:950;">絞り込み（“あり”のみ）</div>
+          <div class="checkRow">
+            <label class="check"><input type="checkbox" data-filter="pc"/>配信用PC支給</label>
+<label class="check"><input type="checkbox" data-filter="gear"/>機材サポート</label>
+<label class="check"><input type="checkbox" data-filter="studio"/>スタジオ利用</label>
+<label class="check"><input type="checkbox" data-filter="tech"/>技術サポート</label>
+<label class="check"><input type="checkbox" data-filter="manager"/>マネージャー担当</label>
+<label class="check"><input type="checkbox" data-filter="debut"/>デビュー支援</label>
+          </div>
+          <div class="footerNote">チェックした項目が「あり」の事務所だけ表示します。</div>
+        </div>
+        <div class="gridCards" data-listings></div>
+      </div>
+      <div style="margin-top:14px;" class="footerNote">注意：実在の企業名・ロゴは使用しません。掲載情報は公式公開情報をもとに整理し、確認できない項目は「不明」として扱います。</div>
+    </section>
+  </div>
+</main>
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>
